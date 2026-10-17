@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pack Satisfatório IA</title>
+<meta name="description" content="20 prompts prontos para criar vídeos ASMR e satisfatórios ultrarrealistas com IA.">
+<!--
+  COMO USAR:
+  1. Troque LINK_DO_CHECKOUT_CAKTO (aparece 3 vezes) pelo link do seu checkout.
+  2. Opcional: troque o bloco .demo por um vídeo seu (veja o comentário lá embaixo).
+  3. Publique de graça arrastando este arquivo no Netlify Drop (app.netlify.com/drop),
+     ou pule a página e coloque o link do checkout direto na bio.
+-->
+<style>
+  :root { --bg:#0a0507; --card:#160b0e; --line:#2c161c; --text:#f6eef0; --muted:#b9a3a9; --ruby:#e0123f; --ruby2:#ff4d6d; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height:1.6; }
+  .wrap { max-width:680px; margin:0 auto; padding:0 16px; }
+  section { padding:48px 0; border-bottom:1px solid var(--line); }
+  h1 { font-size:clamp(30px,7vw,46px); line-height:1.08; letter-spacing:-.03em; margin:0 0 16px; }
+  h2 { font-size:clamp(24px,5vw,32px); line-height:1.15; letter-spacing:-.02em; margin:0 0 16px; }
+  p { margin:0 0 14px; color:var(--muted); }
+  b, strong { color:var(--text); }
+  .kicker { color:var(--ruby2); font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:12px; margin-bottom:12px; }
+  .hero { text-align:center; padding-top:56px; background: radial-gradient(90% 60% at 50% 20%, #4a0618 0%, transparent 70%); }
+  .demo { width:min(280px,70vw); aspect-ratio:9/16; margin:28px auto; border-radius:22px; border:1px solid var(--line); background: radial-gradient(circle at 50% 45%, #4a0618 0%, #0a0507 70%); display:flex; align-items:center; justify-content:center; overflow:hidden; }
+  .gem { width:42%; aspect-ratio:1; border-radius:50% 50% 46% 46%; background: radial-gradient(circle at 35% 30%, #ff9db3 0%, #e0123f 35%, #6d0019 80%); box-shadow:0 0 60px rgba(224,18,63,.6); animation: pulse 3s ease-in-out infinite; }
+  @keyframes pulse { 50% { transform:scale(1.06); box-shadow:0 0 90px rgba(224,18,63,.85); } }
+  @media (prefers-reduced-motion: reduce) { .gem { animation:none; } }
+  .btn { display:block; width:100%; max-width:420px; margin:20px auto 8px; padding:18px 20px; border-radius:14px; background:linear-gradient(180deg,var(--ruby2),var(--ruby)); color:#fff; text-align:center; font-weight:800; font-size:18px; text-decoration:none; box-shadow:0 10px 30px rgba(224,18,63,.35); }
+  .btn:hover { filter:brightness(1.08); }
+  .small { font-size:13px; color:var(--muted); text-align:center; }
+  ul.check { list-style:none; padding:0; margin:0; }
+  ul.check li { padding:10px 0 10px 32px; position:relative; border-bottom:1px solid var(--line); color:var(--muted); }
+  ul.check li::before { content:"✓"; position:absolute; left:0; top:9px; width:22px; height:22px; border-radius:50%; background:var(--ruby); color:#fff; font-size:13px; font-weight:800; display:flex; align-items:center; justify-content:center; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  @media (max-width:520px) { .grid { grid-template-columns:1fr; } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px; }
+  .card h3 { margin:0 0 6px; font-size:17px; }
+  .card p { margin:0; font-size:14px; }
+  .steps { counter-reset:s; display:grid; gap:12px; }
+  .steps .card { position:relative; padding-left:58px; }
+  .steps .card::before { counter-increment:s; content:counter(s); position:absolute; left:16px; top:16px; width:28px; height:28px; border-radius:50%; background:var(--ruby); color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; }
+  .price { text-align:center; }
+  .price .old { text-decoration:line-through; color:var(--muted); font-size:18px; }
+  .price .now { font-size:56px; font-weight:900; letter-spacing:-.03em; color:var(--text); line-height:1; margin:6px 0; }
+  .guarantee { display:flex; gap:16px; align-items:flex-start; }
+  .seal { flex:none; width:88px; height:88px; border-radius:50%; border:3px solid var(--ruby2); display:flex; align-items:center; justify-content:center; text-align:center; font-weight:900; font-size:11px; line-height:1.15; color:var(--ruby2); }
+  details { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:10px; }
+  summary { cursor:pointer; font-weight:700; }
+  details p { margin:10px 0 0; }
+  footer { padding:32px 0 48px; text-align:center; font-size:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker">Vídeos com IA · sem aparecer</div>
+    <h1>Crie os vídeos que ninguém consegue parar de assistir</h1>
+    <p>São <b>20 prompts prontos</b> para gerar vídeos ASMR ultrarrealistas com IA: frutas de vidro sendo cortadas, loops hipnóticos e comida de luxo. Você copia, cola e posta.</p>
+    <!-- Para usar um vídeo seu, troque o bloco abaixo por:
+         <video class="demo" src="seu-video.mp4" autoplay muted loop playsinline></video> -->
+    <div class="demo" aria-hidden="true"><div class="gem"></div></div>
+    <a class="btn" href="LINK_DO_CHECKOUT_CAKTO">Quero o pack por R$ 27</a>
+    <div class="small">Acesso imediato · Pix, cartão ou boleto · Garantia de 7 dias</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Por que esses vídeos funcionam tão bem?</h2>
+    <p>Vídeos satisfatórios prendem o olho no primeiro segundo, são curtos e fecham em loop. A pessoa assiste duas ou três vezes sem perceber, e o algoritmo entende isso como <b>retenção alta</b>, o sinal que mais distribui um vídeo.</p>
+    <p>O problema é que, sem o prompt certo, a IA entrega faca torta, vidro estilhaçando, câmera tremendo e um som que não combina. Você perde horas e créditos tentando acertar.</p>
+    <p><b>Este pack resolve isso.</b> Cada prompt já vem com o tempo de cada cena, a luz, o som e a lista do que a IA deve evitar.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">O que você recebe</div>
+    <h2>20 prompts em 4 categorias</h2>
+    <div class="grid">
+      <div class="card"><h3>💎 Cortes de vidro</h3><p>Morango de rubi, kiwi de esmeralda, laranja de âmbar, uva de ametista, limão de citrino.</p></div>
+      <div class="card"><h3>🧪 Materiais impossíveis</h3><p>Cubo de mel, areia cinética, sabonete de mármore, gelo com flor, chocolate de ouro.</p></div>
+      <div class="card"><h3>🌀 Loops hipnóticos</h3><p>Galáxia de tinta, esferas cromadas, prensa na gelatina, origami vivo, ampulheta.</p></div>
+      <div class="card"><h3>🍰 Comida de luxo</h3><p>Bolo espelhado, favo de mel, macaron, fios de caramelo, bomba de chocolate.</p></div>
+    </div>
+    <ul class="check" style="margin-top:20px">
+      <li>Prompt completo para copiar e colar no Sora, Veo, Kling ou Runway</li>
+      <li>Legenda pronta em português para cada vídeo</li>
+      <li>Guia para gerar, editar e fechar o loop perfeito no CapCut</li>
+      <li>Checklist antes de postar</li>
+      <li>O método de 6 blocos para você criar prompts infinitos sozinho</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Como funciona</div>
+    <h2>Do pagamento ao primeiro vídeo em minutos</h2>
+    <div class="steps">
+      <div class="card"><h3>Receba o PDF</h3><p>O acesso chega no seu e-mail assim que o pagamento é aprovado.</p></div>
+      <div class="card"><h3>Copie um prompt</h3><p>Comece pelo 01, o morango de rubi. É o que mais chama atenção.</p></div>
+      <div class="card"><h3>Gere e poste</h3><p>Cole no gerador de vídeo, escolha a melhor versão e poste com a legenda pronta.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">É para você se...</div>
+    <ul class="check">
+      <li>Você quer criar conteúdo mas não quer aparecer nem filmar</li>
+      <li>Você quer começar um perfil faceless (sem rosto) de vídeos com IA</li>
+      <li>Você já tentou gerar vídeos com IA e o resultado saiu estranho</li>
+      <li>Você quer um estilo de vídeo consistente para postar todo dia</li>
+    </ul>
+  </div>
+</section>
+
+<section class="price">
+  <div class="wrap">
+    <div class="kicker">Acesso completo</div>
+    <h2>Pack Satisfatório IA</h2>
+    <div class="now">R$ 27</div>
+    <p>Pagamento único. Sem mensalidade.</p>
+    <a class="btn" href="LINK_DO_CHECKOUT_CAKTO">Quero meus 20 prompts</a>
+    <div class="small">No checkout você pode adicionar o Kit Perfil Satisfatório por R$ 9,90, com 30 legendas, bios e um calendário de 30 dias.</div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap guarantee">
+    <div class="seal">7 DIAS<br>GARANTIA</div>
+    <div>
+      <h2 style="font-size:22px">Risco zero</h2>
+      <p>Se em até 7 dias você achar que o pack não é para você, é só pedir o reembolso pela própria Cakto e você recebe 100% do valor de volta.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Preciso pagar alguma ferramenta de IA?</summary><p>O pack não inclui a assinatura das ferramentas. A maioria (Sora, Veo, Kling, Runway) oferece créditos grátis para testar, e o guia mostra qual escolher.</p></details>
+    <details><summary>Preciso saber inglês?</summary><p>Não. Os prompts estão em inglês porque as IAs funcionam melhor assim, mas você só precisa copiar e colar. Todas as explicações estão em português.</p></details>
+    <details><summary>Funciona no celular?</summary><p>Sim. Dá para gerar os vídeos pelo navegador ou pelo app das ferramentas e editar no CapCut do celular.</p></details>
+    <details><summary>Posso postar os vídeos que eu gerar?</summary><p>Pode, à vontade, no seu perfil. Você só não pode revender ou redistribuir o pack em si.</p></details>
+    <details><summary>Como recebo o acesso?</summary><p>Assim que o pagamento é aprovado, chega um e-mail com o PDF. No Pix, isso leva poucos minutos.</p></details>
+    <a class="btn" href="LINK_DO_CHECKOUT_CAKTO">Garantir meu pack agora</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Pack Satisfatório IA · Pagamento processado com segurança pela Cakto</div>
+</footer>
+</body>
+</html>
