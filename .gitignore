@@ -3,7 +3,3 @@ node_modules/
 *.log
 .env
 .env.local
-
-# Produto pago: não publicar num repositório público
-meu-produto-cakto/entregaveis/
-meu-produto-cakto/fonte/
